@@ -1,0 +1,14 @@
+.ipynb_checkpoints
+__pycache__
+.DS_Store
+.vscode
+*.hdf5
+*.pth
+*.pt
+*.npy
+*.npz
+*.csv
+data/
+*.pkl
+reports/
+
