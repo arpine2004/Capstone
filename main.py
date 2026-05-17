@@ -78,11 +78,15 @@ def run_notebook(name: str, rel_path: str, log: logging.Logger) -> bool:
         str(nb_path),
     ]
 
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(ROOT) + os.pathsep + env.get("PYTHONPATH", "")
+
     result = subprocess.run(
         cmd,
         cwd=str(ROOT),
         capture_output=True,
         text=True,
+        env=env,
     )
 
     elapsed = time.time() - t0
