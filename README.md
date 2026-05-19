@@ -2,6 +2,8 @@
 
 A capstone project exploring deep learning approaches to photometric redshift estimation from multi-band galaxy images, ending with a Latent Diffusion Model (LDM) capable of generating physically consistent galaxy images conditioned on redshift and morphology.
 
+> **⚠️ Note:** Reproducing the results requires downloading all three data splits (training, validation, and testing) from the GalaxiesML dataset, as well as the model checkpoints from Google Drive. See the [Data](#data) and [Checkpoints](#checkpoints) sections for instructions.
+
 ---
 
 ## Table of Contents
@@ -95,7 +97,7 @@ The data is not included in this repository due to its large size. Download the 
 
 **Dataset page:** https://datalab.astro.ucla.edu/galaxiesml.html
 
-Download the three HDF5 files for the 127×127 resolution (training, validation, testing) and place them in the `data/` folder at the project root.
+All three splits (training, validation, and testing) are required to run the notebooks and reproduce the results. Download the HDF5 files for the 127×127 resolution and place them in the `data/` folder at the project root.
 
 **macOS / Linux:**
 ```bash
